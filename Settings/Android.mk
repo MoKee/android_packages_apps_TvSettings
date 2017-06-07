@@ -30,7 +30,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v14-preference \
     android-support-v17-preference-leanback \
     android-support-v17-leanback \
-    org.cyanogenmod.platform.internal
+    org.mokee.platform.internal
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \

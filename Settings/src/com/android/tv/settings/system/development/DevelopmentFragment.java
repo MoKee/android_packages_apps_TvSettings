@@ -72,8 +72,8 @@ import android.view.accessibility.AccessibilityManager;
 import com.android.internal.app.LocalePicker;
 import com.android.tv.settings.R;
 
-import cyanogenmod.providers.CMSettings;
-import org.cyanogenmod.internal.util.FileUtils;
+import mokee.providers.MKSettings;
+import org.mokee.internal.util.FileUtils;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -29,7 +29,7 @@
         android:fragment="com.android.tv.settings.system.development.EnableDevelopmentDialog"
         />
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+    <mokee.preference.MKSecureSettingSwitchPreference
             android:key="advanced_reboot"
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary" />
