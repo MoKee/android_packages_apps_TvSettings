@@ -74,7 +74,7 @@ public class AboutFragment extends LeanbackPreferenceFragment implements
     private static final String KEY_RESTART = "restart";
     private static final String KEY_TUTORIALS = "tutorials";
     private static final String KEY_ROM_VERSION = "rom_version";
-    private static final String PROPERTY_ROM_VERSION = "ro.lineage.display.version";
+    private static final String PROPERTY_ROM_VERSION = "ro.mk.version";
     private static final String KEY_BUILD_DATE = "build_date";
     private static final String PROPERTY_BUILD_DATE = "ro.build.date";
 

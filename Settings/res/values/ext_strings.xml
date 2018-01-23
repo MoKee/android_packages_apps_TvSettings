@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2018 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About screen, rom version label  [CHAR LIMIT=40] -->
-    <string name="rom_version">LineageOS version</string>
+    <string name="rom_version">MoKee version</string>
 
     <!-- About screen, build date -->
     <string name="build_date">Build date</string>
@@ -32,7 +33,7 @@
     <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
 
     <!-- Description text for bluetooth device pairing instructions. [CHAR LIMIT=150] -->
-    <string name="accessories_add_bluetooth_inst_cm">To start using LineageOS make sure your Bluetooth device is in pairing mode. For Nexus Remote this is done by pressing back and home simultaneously.</string>
+    <string name="accessories_add_bluetooth_inst_cm">To start using MoKee make sure your Bluetooth device is in pairing mode. For Nexus Remote this is done by pressing back and home simultaneously.</string>
 
     <!-- Setting checkbox title for root access -->
     <string name="root_access">Root access</string>
