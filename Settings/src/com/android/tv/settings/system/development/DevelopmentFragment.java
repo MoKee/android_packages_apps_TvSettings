@@ -75,8 +75,8 @@ import com.android.settingslib.development.SystemPropPoker;
 import com.android.tv.settings.R;
 import com.android.tv.settings.SettingsPreferenceFragment;
 
-import lineageos.providers.LineageSettings;
-import org.lineageos.internal.util.FileUtils;
+import mokee.providers.MKSettings;
+import org.mokee.internal.util.FileUtils;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -688,8 +688,8 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     }
 
     private void updateAdbOverNetwork() {
-        int port = LineageSettings.Secure.getInt(getActivity().getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, 0);
+        int port = MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_PORT, 0);
         boolean enabled = port > 0;
 
         updateSwitchPreference(mAdbOverNetwork, enabled);
@@ -772,8 +772,8 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     }
 
     private void resetAdbNotifyOptions() {
-        LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                LineageSettings.Secure.ADB_NOTIFY, 1);
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_NOTIFY, 1);
     }
 
     private void resetRootAccessOptions() {
@@ -1609,11 +1609,11 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
             }
         } else if (preference == mAdbOverNetwork) {
             if (mAdbOverNetwork.isChecked()) {
-                LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                        LineageSettings.Secure.ADB_PORT, 5555);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, 5555);
             } else {
-                LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                        LineageSettings.Secure.ADB_PORT, -1);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, -1);
                 updateAdbOverNetwork();
             }
         } else if (preference == mEnableTerminal) {
