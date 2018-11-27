@@ -28,7 +28,7 @@
         android:summary="@string/security_verify_apps_desc" />
 
     <!-- Trust interface -->
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
+    <org.mokee.internal.mkparts.MKPartsPreference
         android:key="trust_interface" />
 
     <PreferenceCategory
