@@ -37,7 +37,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     androidx.lifecycle_lifecycle-common-java8
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.lineageos.platform.internal
+    org.mokee.platform.internal
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 

@@ -76,7 +76,7 @@ import java.net.NetworkInterface;
 import java.net.InetAddress;
 import java.net.SocketException;
 
-import lineageos.providers.LineageSettings;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -659,8 +659,8 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     }
 
     private void updateAdbOverNetwork() {
-        int port = LineageSettings.Secure.getInt(getActivity().getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, 0);
+        int port = MKSettings.Secure.getInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_PORT, 0);
         boolean enabled = port > 0;
 
         updateSwitchPreference(mAdbOverNetwork, enabled);
@@ -719,8 +719,8 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     }
 
     private void resetAdbNotifyOptions() {
-        LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                LineageSettings.Secure.ADB_NOTIFY, 1);
+        MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                MKSettings.Secure.ADB_NOTIFY, 1);
     }
 
     private void updateBluetoothHciSnoopLogValues() {
@@ -1548,11 +1548,11 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
             mADBRootService.setEnabled(mEnableAdbRoot.isChecked());
         } else if (preference == mAdbOverNetwork) {
             if (mAdbOverNetwork.isChecked()) {
-                LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                        LineageSettings.Secure.ADB_PORT, 5555);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, 5555);
             } else {
-                LineageSettings.Secure.putInt(getActivity().getContentResolver(),
-                        LineageSettings.Secure.ADB_PORT, -1);
+                MKSettings.Secure.putInt(getActivity().getContentResolver(),
+                        MKSettings.Secure.ADB_PORT, -1);
             }
             updateAdbOverNetwork();
         } else if (preference == mEnableTerminal) {

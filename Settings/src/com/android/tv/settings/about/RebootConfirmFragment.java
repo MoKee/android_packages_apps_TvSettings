@@ -30,7 +30,7 @@ import androidx.leanback.widget.GuidedAction;
 
 import com.android.tv.settings.R;
 
-import org.lineageos.internal.util.PowerMenuUtils;
+import org.mokee.internal.util.PowerMenuUtils;
 
 import java.util.List;
 
