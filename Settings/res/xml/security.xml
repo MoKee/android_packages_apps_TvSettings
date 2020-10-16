@@ -24,7 +24,7 @@
         android:fragment="com.android.tv.settings.device.apps.specialaccess.ExternalSources" />
 
     <!-- Trust interface -->
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
+    <org.mokee.internal.mokeeparts.MoKeePartsPreference
         android:key="trust_interface" />
 
     <PreferenceCategory
