@@ -23,6 +23,11 @@
         android:key="about_device"
         android:title="@string/about_preference"/>
     <Preference
+        android:fragment="com.android.tv.settings.system.ButtonsFragment"
+        android:icon="@drawable/ic_buttons"
+        android:key="button_settings"
+        android:title="@string/system_buttons"/>
+    <Preference
         android:fragment="com.android.tv.settings.system.DateTimeFragment"
         android:icon="@drawable/ic_access_time"
         android:key="date_time"
@@ -73,4 +78,9 @@
         android:key="reboot"
         android:title="@string/restart_button_label"
         android:fragment="com.android.tv.settings.about.RebootConfirmFragment" />
+    <Preference
+        android:icon="@drawable/ic_shutdown"
+        android:key="shutdown"
+        android:title="@string/shutdown_button_label"
+        android:fragment="com.android.tv.settings.about.ShutdownConfirmFragment" />
 </PreferenceScreen>
