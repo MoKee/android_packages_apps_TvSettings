@@ -27,9 +27,10 @@
         android:title="@string/security_verify_apps_title"
         android:summary="@string/security_verify_apps_desc" />
 
-    <!-- Trust interface -->
-    <org.mokee.internal.mkparts.MKPartsPreference
-        android:key="trust_interface" />
+    <Preference
+        android:key="trust"
+        android:title="@string/trust_title"
+        android:fragment="com.android.tv.settings.privacy.TVTrustPreferences" />
 
     <PreferenceCategory
         android:key="restricted_profile_group"
