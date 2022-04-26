@@ -44,7 +44,7 @@
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
 
     <!-- Trust -->
-    <string name="trust_title" translatable="false">@*lineageos.platform:string/trust_feature_name</string>
+    <string name="trust_title" translatable="false">@*mokee.platform:string/trust_feature_name</string>
     <string name="trust_category_features">Status</string>
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">Enforcing</string>
