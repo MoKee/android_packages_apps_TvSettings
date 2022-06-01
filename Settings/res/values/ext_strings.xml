@@ -39,6 +39,11 @@
     <string name="enable_adb_root">Rooted debugging</string>
     <string name="enable_adb_root_summary">Allow running Android debugging as root</string>
 
+    <!-- Android debugging over network -->
+    <string name="adb_over_network">ADB over network</string>
+    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
+
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
@@ -72,5 +77,17 @@
     <string name="trust_warnings_alerts_intro">You can select the security issues you want to be warned about. For your safety, it is recommended to enable all alerts</string>
     <string name="trust_warnings_selinux">SELinux status</string>
     <string name="trust_warnings_keys">Build signature</string>
+
+    <!-- Tegra convertible port -->
+    <string name="convertible_port_busy_title">USB port 1 is in use</string>
+    <string name="convertible_port_busy_warning">Unplug any devices or accessories and try again</string>
+    <string name="mtp_enable_title">Accessing SHIELD folders on PC using USB</string>
+    <string name="mtp_enable_warning">USB port 1 is now configured for SHIELD to connect to a PC as a media device.\n\nThis port will no longer detect USB storage media or USB accessories and cannot be used for charging devices.</string>
+    <string name="mtp_retry_error">Failed. Please retry.</string>
+    <string name="mtp_summary">In this mode, the USB port is not functional for other uses</string>
+    <string name="mtp_title">Transfer files to a computer using USB</string>
+    <string name="mtp_unexpected_error">Unexpected error. Please retry later.</string>
+    <string name="usb_debugging_enable_title">USB debugging enabled</string>
+    <string name="usb_debugging_enable_warning">USB port 1 is now configured for SHIELD to connect to a PC as a media device.\n\nThis port will no longer detect USB storage media or USB accessories and cannot be used for charging devices.</string>
 
 </resources>
